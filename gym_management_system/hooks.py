@@ -6,7 +6,7 @@ app_publisher = "Aysha"
 app_description = "App to manage gym memberships"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "ayshahakeem02@gmail.com"
+app_email = "ayshapp468@gmail.com"
 app_license = "MIT"
 
 # Includes in <head>

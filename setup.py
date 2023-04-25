@@ -11,7 +11,7 @@ setup(
 	version=version,
 	description="App to manage gym memberships",
 	author="Aysha",
-	author_email="ayshahakeem02@gmail.com",
+	author_email="ayshapp468@gmail.com",
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
