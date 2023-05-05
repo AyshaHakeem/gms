@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2023-05-04 03:15:55.835495",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-05-04 03:19:10.609735",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "my_profile",
+ "owner": "Administrator",
+ "page_name": "my_profile",
+ "roles": [
+  {
+   "role": "Gym Member Role"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Profile"
+}

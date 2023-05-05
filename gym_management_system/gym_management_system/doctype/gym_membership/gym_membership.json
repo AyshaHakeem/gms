@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{email}",
+ "creation": "2023-04-30 03:16:45.684033",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_member",
+  "email",
+  "plan_details_section",
+  "plan",
+  "number_of_months",
+  "column_break_jjktb",
+  "monthly_fee",
+  "plan_total",
+  "column_break_c3efz",
+  "expiration_date",
+  "do_you_require_a_cardio_machine_section",
+  "cardio",
+  "column_break_qwlwc",
+  "cardio_fee",
+  "column_break_xafid",
+  "cardio_total",
+  "choose_a_locker_section",
+  "gym_locker",
+  "choose_your_trainer_section",
+  "gym_trainer",
+  "data_uc29e",
+  "amended_from",
+  "data_uzry0"
+ ],
+ "fields": [
+  {
+   "fieldname": "choose_a_locker_section",
+   "fieldtype": "Section Break",
+   "label": "Choose A Locker"
+  },
+  {
+   "fieldname": "gym_member",
+   "fieldtype": "Link",
+   "label": "Gym Member",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "plan_details_section",
+   "fieldtype": "Section Break",
+   "label": "Plan Details"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "label": "Plan",
+   "options": "Gym Workout Plan"
+  },
+  {
+   "fieldname": "column_break_jjktb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "plan.monthly_fee",
+   "fieldname": "monthly_fee",
+   "fieldtype": "Currency",
+   "label": "Monthly Fee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_c3efz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_months",
+   "fieldtype": "Int",
+   "label": "No of months"
+  },
+  {
+   "fieldname": "do_you_require_a_cardio_machine_section",
+   "fieldtype": "Section Break",
+   "label": "Do you require a cardio machine?"
+  },
+  {
+   "fieldname": "cardio",
+   "fieldtype": "Select",
+   "label": "Cardio",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_qwlwc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cardio_fee",
+   "fieldtype": "Currency",
+   "label": "Monthly Fee"
+  },
+  {
+   "fieldname": "gym_locker",
+   "fieldtype": "Link",
+   "label": "Gym Locker",
+   "options": "Gym Locker"
+  },
+  {
+   "fieldname": "choose_your_trainer_section",
+   "fieldtype": "Section Break",
+   "label": "Choose your trainer"
+  },
+  {
+   "fieldname": "data_uc29e",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "expiration_date",
+   "fieldtype": "Date",
+   "label": "Expiration Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Membership",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "gym_member.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "gym_trainer",
+   "fieldtype": "Link",
+   "label": "Gym Trainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "depends_on": "monthly_fee",
+   "fieldname": "plan_total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "data_uzry0",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_xafid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "cardio",
+   "fieldname": "cardio_total",
+   "fieldtype": "Data",
+   "label": "Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-05 04:14:05.178651",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Membership",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member Role",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
