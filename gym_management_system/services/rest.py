@@ -3,8 +3,6 @@ import frappe
 def update_locker_doc(locker_name, gym_member):
     pass
 
-import frappe
-
 @frappe.whitelist()
 def create_revenue_report( customer, plan, total):
     
