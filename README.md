@@ -1,6 +1,6 @@
 ## Gym Management System
 
-App to manage gym memberships
+App created using Frappe framework to manage gym memberships
 
 #### License
 
